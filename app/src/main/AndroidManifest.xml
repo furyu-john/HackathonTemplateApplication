@@ -21,6 +21,7 @@
         <activity android:name=".template.TextViewButtonImageViewActivity" />
         <activity android:name=".template.CheckBoxSwitchProgressBarActivity" />
         <activity android:name=".template.LinearLayoutActivity" />
+        <activity android:name=".template.ListViewActivity" />
         <!-- ここまでテンプレート用 -->
     </application>
 
