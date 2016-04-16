@@ -3,6 +3,8 @@
     package="com.example.taku.hackathontemplateapplication">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +20,6 @@
             </intent-filter>
         </activity>
 
-
         <!-- ここからテンプレート用 -->
         <activity android:name=".template.TextViewButtonImageViewActivity" />
         <activity android:name=".template.CheckBoxSwitchProgressBarActivity" />
@@ -26,6 +27,7 @@
         <activity android:name=".template.ListViewActivity" />
         <activity android:name=".template.GridViewActivity" />
         <activity android:name=".template.CameraActivity" />
+        <activity android:name=".template.GPSActivity"></activity>
         <!-- ここまでテンプレート用 -->
     </application>
 
