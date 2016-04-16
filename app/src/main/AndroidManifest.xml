@@ -27,7 +27,8 @@
         <activity android:name=".template.ListViewActivity" />
         <activity android:name=".template.GridViewActivity" />
         <activity android:name=".template.CameraActivity" />
-        <activity android:name=".template.GPSActivity"></activity>
+        <activity android:name=".template.GPSActivity" />
+        <activity android:name=".template.SensorActivity" />
         <!-- ここまでテンプレート用 -->
     </application>
 
