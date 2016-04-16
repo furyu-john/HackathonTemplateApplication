@@ -14,19 +14,20 @@
 ### コピペ用テンプレート
 以下のテンプレートが同プロジェクト内のコピペですぐに利用できること。
 - レイアウト関係
- - LinearLayoutとRelativeLayout
- - TextView、Button、
- - ListView、GridViewのAdapter
+ - [x] LinearLayout
+ - [x] TextView、Button、ImageView
+ - [x] CheckBox、Switch、ProgressBar
+ - [x] ListView、GridViewおよび、カスタムAdapter
 - ネットワーク通信
- - 外部で公開されているAPIの呼び出し
- - 画像や動画のダウンロード
- - FireBaseの利用
+ - [ ] 外部で公開されているAPIの呼び出し
+ - [ ] 画像や動画のダウンロード
+ - [ ] FireBaseの利用
 - 端末の機能
- - カメラ・ギャラリーから画像（動画）取得
- - GPS
- - 加速度センサー・ジャイロスコープ
- - Bluetooth
- - 音声再生・録音
+ - [x] カメラから画像取得
+ - [x] GPS
+ - [x] 加速度センサー・地磁気センサーで端末向き取得
+ - [ ] Bluetooth
+ - [ ] 音声再生・録音
  
 ### プロジェクト構成
 - 簡単なパッケージ構成
