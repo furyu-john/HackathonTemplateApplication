@@ -19,6 +19,7 @@
 
         <!-- ここからテンプレート用 -->
         <activity android:name=".template.TextViewButtonImageViewActivity" />
+        <activity android:name=".template.CheckBoxSwitchProgressBarActivity" />
         <!-- ここまでテンプレート用 -->
     </application>
 
