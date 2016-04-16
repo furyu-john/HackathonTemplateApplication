@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import com.example.taku.hackathontemplateapplication.R;
@@ -17,22 +17,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ListViewのテンプレート
+ * GridViewのテンプレート
  */
-public class ListViewActivity extends AppCompatActivity {
+public class GridViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.template_listview);
+        setContentView(R.layout.template_gridview);
 
         List<Data> dataList = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             dataList.add(new Data("index: " + i));
         }
 
-        ListView listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter(new DataListAdapter(this, 0, dataList));
+        GridView gridView = (GridView) findViewById(R.id.gridView);
+        gridView.setAdapter(new DataGridAdapter(this, 0, dataList));
     }
 
     /**
@@ -51,14 +51,14 @@ public class ListViewActivity extends AppCompatActivity {
     }
 
     /**
-     * データリストからリストビューを生み出すためのカスタムアダプター
+     * データリストからグリッドビューを生み出すためのカスタムアダプター
      */
-    private static class DataListAdapter extends ArrayAdapter<Data> {
+    private static class DataGridAdapter extends ArrayAdapter<Data> {
 
         LayoutInflater layoutInflater;
 
 
-        public DataListAdapter(Context context, int resource, List<Data> objects) {
+        public DataGridAdapter(Context context, int resource, List<Data> objects) {
             super(context, 0, objects);
             layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
@@ -76,5 +76,6 @@ public class ListViewActivity extends AppCompatActivity {
             return convertView;
         }
     }
+
 
 }
