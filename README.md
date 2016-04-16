@@ -16,7 +16,7 @@
 - レイアウト関係
  - LinearLayoutとRelativeLayout
  - TextView、Button、
- - ListView、GridView、ViewPager、RecyclerViewのAdapterDrawerLayout
+ - ListView、GridViewのAdapter
 - ネットワーク通信
  - 外部で公開されているAPIの呼び出し
  - 画像や動画のダウンロード
