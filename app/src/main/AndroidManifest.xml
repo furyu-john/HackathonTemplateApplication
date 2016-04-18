@@ -31,6 +31,7 @@
         <activity android:name=".template.GPSActivity" />
         <activity android:name=".template.SensorActivity" />
         <activity android:name=".template.FirebaseActivity" />
+        <activity android:name=".template.TemplateListActivity" />
         <!-- ここまでテンプレート用 -->
     </application>
 
