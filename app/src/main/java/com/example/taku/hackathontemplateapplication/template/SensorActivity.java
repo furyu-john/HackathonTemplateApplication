@@ -47,6 +47,12 @@ public class SensorActivity extends AppCompatActivity implements SensorEventList
                 sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
             }
 
+            if (sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
+                sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+            }
+            if (sensor.getType() == Sensor.TYPE_GYROSCOPE) {
+                sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+            }
             if (sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
                 sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
             }
@@ -65,7 +71,13 @@ public class SensorActivity extends AppCompatActivity implements SensorEventList
             case Sensor.TYPE_MAGNETIC_FIELD:
                 magneticValues = event.values.clone();
                 break;
+            case Sensor.TYPE_LINEAR_ACCELERATION:
+                accelerometerValues = event.values.clone();
+                break;
             case Sensor.TYPE_ACCELEROMETER:
+                accelerometerValues = event.values.clone();
+                break;
+            case Sensor.TYPE_GYROSCOPE:
                 accelerometerValues = event.values.clone();
                 break;
         }

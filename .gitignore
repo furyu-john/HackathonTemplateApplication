@@ -7,3 +7,7 @@
 /captures
 
 gradle.properties
+
+# setting files
+google_maps_api.xml
+google-services.json
