@@ -22,13 +22,15 @@
  - [ ] 外部で公開されているAPIの呼び出し
  - [ ] 画像や動画のダウンロード
  - [x] FireBaseを利用したリアルタイム通信
+ - [x] google Map API呼び出し 
+ - [x] push通知（Firebaseを使ったもの）
 - 端末の機能
  - [x] カメラから画像取得
  - [x] GPS
  - [x] 加速度センサー・地磁気センサーで端末向き取得
  - [ ] Bluetooth
  - [ ] 音声再生・録音
- 
+
 ### プロジェクト構成
 - [ ] 簡単なパッケージ構成
 - [x] タイトル画面のテンプレート
@@ -46,3 +48,28 @@
 - 自動回転には対応しない。縦向きか横向きに固定する。
 
 ただし、アプリのコンセプトによっては自動回転対応などはありえる。
+
+## 設定ファイルについて
+### google mapのキー
+```
+src
+ └ debug
+   └ res
+     └ values
+   　   └ google_maps_api.xml
+```
+として中身を
+```
+<resources>
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+    ほげほげ
+    </string>
+</resources>
+```
+とする。（直接AndroidManifestに書いても良い）
+
+### firebaseに使われるgoogle-services.json
+app直下においてください。
+設定しかしていないので、バックグラウンドにアプリがあるときにしかプッシュが来ない模様
+http://qiita.com/SnowMonkey/items/7f08eb0275f2420c29eb
+
